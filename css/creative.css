@@ -168,7 +168,7 @@ img::-moz-selection {
     color: rgb(70, 146, 245);
   }
 }
-
+/*
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
@@ -188,7 +188,7 @@ header.masthead h1 {
 
 header.masthead p {
   font-weight: 300;
-}
+}*/
 
 @media (min-width: 768px) {
   header.masthead p {
