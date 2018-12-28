@@ -18,32 +18,48 @@
     <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
 
     <!-- Navigation -->
+    <style>
+        #mainNav {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+    </style>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img src="img/logo.png" alt="" width="200" height="50">
+        </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#AboutUs"> Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#citogenetica">Citogenética</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Bio. molecular</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">FISH</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact"><small>Análisis Clínicos</small></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Resultados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
@@ -67,56 +83,91 @@
       </div>
     </header>
 
-    <section class="bg-primary" id="about">
+    <section id="AboutUs">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+            <h2 class="section-heading">Sobre nosotros</h2>
+            <hr class="my-4">
+            <p class="mb-5">
+                Laboratorios Mendel es un laboratorio clínico con especialidad en Citogenética Clásica, Citogenética Molecular y Biología Molecular, establecido en la ciudad de Morelia, Michoacán.
+            </p>
+            <a href="#">Aviso de Privacidad</a>
+            <p></p>
           </div>
         </div>
+        <div class="row">
+            <div class="col-lg-4 ml-auto text-justify">
+              <strong>MISIÓN</strong>
+              <p>
+                  Proveer el mejor servicio de diagnóstico genético y molecular basado en el cumplimiento de los más altos estándares de calidad y respaldado por un personal especializado en cada una de las áreas de competencia a fin de establecer un vínculo profesional y humano entre laboratorio, pacientes y médicos tratantes.
+              </p>
+            </div>
+            <div class="col-lg-4 ml-auto text-justify">
+              <strong>VISIÓN</strong>
+              <p>
+                  Ser el principal proveedor de servicios de diagnóstico genético molecular, a nivel nacional, en las áreas prenatal, postnatal y onco-hematopatológica, basados siempre en los más altos estándares de calidad y comprometidos con el bienestar y salud del paciente.
+              </p>
+            </div>
+            <div
+             class="col-lg-4 mr-auto text-justify">
+              <strong>FILOSOFÍA</strong>
+              <p>
+                  Ser una empresa innovadora, constantemente en desarrollo, con colaboradores comprometidos e involucrados en las áreas de investigación, desarrollo y docencia, interesados por el bienestar de la sociedad a la que servimos.
+              </p>
+            </div>
+          </div>
+          <section class="bg-primary">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 mx-auto text-center">
+                  <img src="img/EMA.jpg" alt="" width="300" height="200">
+                </div>
+                <div class="col-lg-8 mx-auto text-center">
+                  <h2 class="section-heading text-white">Acreditación EMA </h2>
+                  <hr class="light my-4">
+                  <p class="text-faded mb-4">
+                    Estamos acreditados ante los má altos estándares en citogenética y biología molecular.
+                  </p>
+                  <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Saber más!</a>
+                </div>
+              </div>
+            </div>
+          </section>
       </div>
     </section>
 
-    <section id="services">
+    <section id="citogenetica">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
+            <h2 class="section-heading">Citogenética clásica</h2>
             <hr class="my-4">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-6 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+              <i class="fas fa-4x fa-clipboard-list text-primary mb-3 sr-icon-1"></i>
+              <h3 class="mb-3">PRE-POSTNATAL</h3>
+              <p class="text-muted mb-0">
+                  Diagnóstico de anomalías congénitas de órganos y/o sistemas del ser humano, retraso mental, retraso en el
+                  desarrollo, trastornos reproductivos como infertilidad, abortos espontáneos, entre
+                  otros..
+              </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-6 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>
-              <h3 class="mb-3">Ready to Ship</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>
-              <h3 class="mb-3">Up to Date</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>
-              <h3 class="mb-3">Made with Love</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+              <i class="fas fa-4x fa-dna text-primary mb-3 sr-icon-2"></i>
+              <h3 class="mb-3">ONCOHEMATOLÓGICA</h3>
+              <p class="text-muted mb-0">
+                  El análisis citogenético es el estudio de los cromosomas de las células en metafase.
+                  Las anomalías cromosómicas pueden deberse a defectos en la estructura o a
+                  modificaciones en el número de los cromosomas.
+              </p>
             </div>
           </div>
         </div>
@@ -257,10 +308,10 @@
 
     <!-- Plugin JavaScript -->
     <script src="lib/jquery-easing/jquery.easing.min.js"></script>
-    <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+    <script src="lib/scrollreveal/scrollreveal.js"></script>
     <script src="lib/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/creative.js"></script>
 </body>
 </html>
