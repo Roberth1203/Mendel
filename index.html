@@ -20,6 +20,8 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
 
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
   <body id="page-top">
@@ -92,7 +94,7 @@
             <p class="mb-5">
                 Laboratorios Mendel es un laboratorio clínico con especialidad en Citogenética Clásica, Citogenética Molecular y Biología Molecular, establecido en la ciudad de Morelia, Michoacán.
             </p>
-            <a href="#">Aviso de Privacidad</a>
+            <a id="enlace-aviso_privacidad" data-toggle="modal" data-target="#modal-aviso_privacidad">Aviso de Privacidad</a>
             <p></p>
           </div>
         </div>
@@ -127,9 +129,9 @@
                   <h2 class="section-heading text-white">Acreditación EMA </h2>
                   <hr class="light my-4">
                   <p class="text-faded mb-4">
-                    Estamos acreditados ante los má altos estándares en citogenética y biología molecular.
+                    Estamos acreditados ante los más altos estándares en citogenética y biología molecular.
                   </p>
-                  <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Saber más!</a>
+                  <a class="btn btn-light btn-xl js-scroll-trigger" href="#services" data-toggle="modal" data-target="#modal-acreditacion_ema">Saber más!</a>
                 </div>
               </div>
             </div>
@@ -151,7 +153,7 @@
           <div class="col-lg-6 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fas fa-4x fa-clipboard-list text-primary mb-3 sr-icon-1"></i>
-              <h3 class="mb-3">PRE-POSTNATAL</h3>
+              <h3 class="mb-3" data-toggle="modal" data-target="#modal-pre_postnatal">PRE-POSTNATAL</h3>
               <p class="text-muted mb-0">
                   Diagnóstico de anomalías congénitas de órganos y/o sistemas del ser humano, retraso mental, retraso en el
                   desarrollo, trastornos reproductivos como infertilidad, abortos espontáneos, entre
@@ -162,7 +164,7 @@
           <div class="col-lg-6 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fas fa-4x fa-dna text-primary mb-3 sr-icon-2"></i>
-              <h3 class="mb-3">ONCOHEMATOLÓGICA</h3>
+              <h3 class="mb-3" data-toggle="modal" data-target="#modal-oncohematologia">ONCOHEMATOLÓGICA</h3>
               <p class="text-muted mb-0">
                   El análisis citogenético es el estudio de los cromosomas de las células en metafase.
                   Las anomalías cromosómicas pueden deberse a defectos en la estructura o a
@@ -300,6 +302,125 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Sección de ventanas modales-->
+    <section>
+      <div id="modal-aviso_privacidad" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <embed src="docs/AvisoPrivacidad-2019.pdf">
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-acreditacion_ema" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <embed src="docs/MENDELAB S.A. DE C.V..pdf">
+            </div>
+          </div>
+        </div>
+
+      <div id="modal-pre_postnatal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <img src="img/lab_1.jpg" alt="" class="modal-img_header">
+            <div class="modal-body texto_descripcion" id="pre_postnatal_body">
+              <br>
+                <p>
+                Es el diagnóstico de anomalías congénitas de órganos y/o sistemas del ser humano
+                (sistema nervioso, circulatorio, respiratorio, digestivo, urinario, osteomuscular,
+                ojos, oídos, cara, cuello, órganos genitales), retraso mental, retraso en el
+                desarrollo, trastornos reproductivos como infertilidad, abortos espontáneos, entre
+                otros; los cuales pueden ser diagnosticados durante la etapa prenatal (periodo
+                fetal del ser humano) o la etapa postnatal (infancia, pubertad, adolescencia,
+                madurez).
+                </p>
+                <p>
+                    <strong style="color: rgba(12, 125, 201, 0.781);">Todos los estudios están acreditados bajo la norma NMX-15189-2015
+                     (ISO 15189-2012).</strong> 
+                </p>
+                <h5>SERVICIOS MENDEL DEL SERVICIO PRE-POSTNATAL:</h5>
+                <p>
+                <strong>Cariotipo regular en sangre periférica</strong> se indica en la detección de alteraciones
+                cromosómicas numéricas y estructurales, malformaciones físicas con o sin retraso
+                mental, retraso en el desarrollo, ambigüedad de genitales, desarrollo inadecuado
+                de caracteres sexuales secundarios e infertilidad. Es básico para el diagnóstico de
+                síndromes cromosómicos como el Síndrome de Down (trisomía 21), Edwards
+                (trisomía 18), Patau (trisomia 13), Klinefelter (XXY), Turner (monosomía del
+                cromosoma X), entre otros.
+                </p>
+                <p>
+                <strong>Cariotipo de alta resolución en sangre periférica</strong> se indica en pacientes con
+                diversos trastornos del desarrollo físico o mental, así como con trastornos de la
+                diferenciación sexual, esterilidad o infertilidad. Se buscan pequeños segmentos de
+                los cromosomas que estén ausentes o duplicados en cada uno de ellos, para
+                determinar una correlación clínica con síndromes de microdeleción cromosómica,
+                tales como Prader-Willi, Cridu-chat, Williams, entre otros.
+                
+                </p>
+                <p>
+                <strong>Cariotipo en líquido amniótico</strong> consiste en extraer un volumen especifico de
+                líquido del saco que rodea al feto en el vientre (líquido amniótico), entre la semana
+                14 y 20 del embarazo. Lo realiza un especialista en un consultorio médico, en un
+                quirófano o en un centro médico. Este estudio ayuda a diagnosticar problemas del
+                cierre del tubo neural como espina bífida y anencefalia (ausencia parcial o total del
+                cerebro o cráneo), trisomías (tres cromosomas de cada tipo, normalmente son
+                dos) del cromosoma 13,18 y 21 así como alteraciones cromosómica estructurales
+                balanceadas o desbalanceadas.
+                </p>
+                <p>
+                <strong>Cariotipo en biopsia de producto de concepción</strong> ayuda a confirmar o descartar
+                una anormalidad cromosómica como causa de la pérdida del embarazo. Un aborto
+                espontáneo (o aborto involuntario) es la pérdida del feto. Entre un 10 a un 20% de
+                los embarazos confirmados terminan en un aborto espontáneo y más del 80% de
+                estas pérdidas suceden antes de las 12 semanas. Alrededor de 50% de los
+                abortos espontáneos que tienen lugar durante el primer trimestre son el resultado
+                de anomalías cromosómicas en el feto. Las parejas que han tenido dos o más
+                abortos consecutivos tienen más probabilidades de ser portadores de arreglos
+                estructurales en sus cromosomas que propicien tener un embarazo afectado que
+                se pueda perder durante el primer trimestre.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-oncohematologia" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img src="img/onco.jpg" alt="" class="modal-img_header">
+              <div class="modal-body texto_descripcion" id="oncohematologia_body">
+                <br>
+                  <h5>Mendel es el primer laboratorio en el país que obtiene una acreditación en el área de
+                    citogenética clásica.</h5>
+                  <p>    
+                      Utilidad diagnostica de un Cariotipo Oncológico en una muestra de médula ósea o en
+                      sangre periférica: establecer y/o confirmar el diagnóstico, establecer un pronóstico y
+                      monitorear la respuesta al tratamiento en anemias, leucemias y linfomas; asimismo
+                      para establecer la aceptación o el rechazo al trasplante.
+                  </p>
+                  <p>
+                     <strong style="color: rgb(12, 125, 201);">Todos los estudios están acreditados bajo la norma NMX-15189-2015
+                      (ISO 15189-2012).</strong> 
+                  </p>
+                  <p>
+                      Algunos de los diagnósticos en los cuales está indicado realizar el Cariotipo Oncológico
+                      son:
+                  </p>
+                  <ul>
+                    <li>Leucemia Linfoblástica Aguda de células B y/o T.</li>
+                    <li>Leucemia Mieloide Aguda.</li>
+                    <li>Leucemia Mieloide Crónica.</li>
+                    <li>Síndrome Mielodisplásico.</li>
+                    <li>Mieloma Múltiple.</li>
+                    <li>Linfomas, entre otros.</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
     <!-- Bootstrap core JavaScript -->
