@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mendel | Laboratorios</title>
+    <title>Mendel | Especialistas en Genética Molecular</title>
 
     <!-- Bootstrap core CSS -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -13,6 +13,7 @@
     <link href="lib/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
 
     <!-- Plugin CSS -->
     <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -35,7 +36,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <img src="img/logo.png" alt="" width="200" height="50">
+            <img src="img/logo.png" alt="" width="200" height="40">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,33 +44,33 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#AboutUs"> Nosotros</a>
+              <a class="nav-link js-scroll-trigger" href="#AboutUs" style="color:black;"> Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#citogenetica">Citogenética</a>
+              <a class="nav-link js-scroll-trigger" href="#citogenetica" style="color:black;">Citogenética</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Bio. molecular</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio" style="color:black;">Bio. molecular</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">FISH</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio" style="color:black;">FISH</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contact"><small>Análisis Clínicos</small></a>
+                <a class="nav-link js-scroll-trigger" href="#portfolio" style="color:black;"><small>Análisis Clínicos</small></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contact">Resultados</a>
+                <a class="nav-link js-scroll-trigger" href="#portfolio" style="color:black;">Resultados</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+                <a class="nav-link js-scroll-trigger" href="#contact" style="color:black;">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
+    <header class="masthead text-center text-white d-flex" style="margin-top: 5%;">
+      <!--<div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
@@ -82,7 +83,154 @@
             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
           </div>
         </div>
+      </div>-->
+      <div class="containerSlide">
+          <div class="slider">
+              <div class="slide slide1">
+                  <div class="caption">
+                      <h2>Biología molecular</h2>
+                      <p>
+                          Estudio de los fenómenos biológicos a partir de los ácidos nucleicos (DNA y RNA) y proteínas asociadas como elementos centrales.
+                      </p>
+                  </div>
+              </div>
+              <div class="slide slide2">
+                  <div class="caption">
+                      <h2>Citogenética</h2>
+                      <p>Estudio del material genético condensado en cromosomas.</p>
+                  </div>
+              </div>
+              <div class="slide slide3">
+                  <div class="caption">
+                      <h2>FISH</h2>
+                      <p>Hibridación fluorescente en el sitio cromosómico de interés utilizando sondas específicas de DNA.</p>
+                  </div>
+              </div>
+              <div class="slide slide4">
+                  <div class="caption">
+                      <h2>Laboratorio Clínico</h2>
+                      <p>Estudios de productos del metabolismo para valorar la salud del paciente.</p>
+                  </div>
+              </div>
+              
+          </div>
       </div>
+
+      <style>
+        .containerSlide {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 80vh;
+}
+.containerSlide .slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500%;
+	height: 100%;
+	animation: animate 10s linear infinite;
+}
+.containerSlide .slider .slide {
+	position: relative;
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.containerSlide .slider .slide .caption { 
+	position: absolute;
+	bottom: 60px;
+	right: 60px;
+	left: 60px;
+	padding: 30px;
+	background-color: rgba(0,0,0,.5);
+	box-sizing:border-box;
+	transition: 5s;
+}
+.containerSlide .slider .slide .caption h2 { 
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 48px;
+	transition: 5s;
+}
+.containerSlide .slider .slide .caption p { 
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 18px;
+	transition: 5s;
+}
+.containerSlide .slider .slide.slide1 {
+	background: url(img/slider.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.containerSlide .slider .slide.slide2 {
+	background: url(img/slider2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.containerSlide .slider .slide.slide3 {
+	background: url(img/slider3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.containerSlide .slider .slide.slide4 {
+	background: url(img/slider4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+@keyframes animate {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.containerSlide .slider .slide .caption { 
+		bottom: 20px;
+		right: 20px;
+		left: 20px;
+		padding: 20px;
+	}
+	.containerSlide .slider .slide .caption h2 { 
+		margin: 0 0 10px;
+		font-size: 30px;
+	}
+	.containerSlide .slider .slide .caption p { 
+		font-size: 16px;
+	}
+}
+      </style>
     </header>
 
     <section id="AboutUs">
@@ -174,109 +322,138 @@
           </div>
         </div>
       </div>
+      
+      <div class="container" style="margin-top: 10%;">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Citogenética molecular</h2>
+              <hr class="my-4">
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 text-center">
+                
+                  <i class="fas fa-4x fa-eye-dropper text-primary mb-3 sr-icon-1"></i>
+                  
+                  <p class="text-muted mb-0">
+                      A la par de la Citogenética Clásica, la parte molecular de la citogenética ayuda a resaltar partes puntuales o específicas de la doble hélice, determinando la presencia o ausencia de material genético relacionado a una alteración patológica o enfermedad.
+                  </p>
+                  <p>
+                      Las metodologías de citogenética molecular como lo es la Hibridación Genómica Comparativa (GCH), Hibridación Fluorescente In Situ (FISH) y sus variantes, son herramientas complementarias de gran aplicación en el diagnóstico clínico de enfermedades genéticas y genómicas.
+                  </p>
+                  <p>
+                      La citogenética molecular complementa perfectamente a la citogenética clásica en todas aquellas situaciones en las que no ha sido posible realizar un cariotipo: al disponer de metafases de poca calidad, o no haber obtenido metafases, o bien en los casos en los que las alteraciones cromosómicas asociadas a un diagnóstico son crípticas no visibles en el cariotipo, como el caso de la t(12;21) en leucemia aguda linfoblástica(LLA).
+                  </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Nuestro catálogo completo de servicios!</h2>
+        <!--<a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>-->
+      </div>
     </section>
 
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+            <a class="portfolio-box" data-toggle="modal" data-target="#modal-fish">
               <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    FISH
                   </div>
                   <div class="project-name">
-                    Project Name
+                      Hibridación fluorescente en el sitio cromosómico de interés utilizando sondas específicas de DNA
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+            <a class="portfolio-box" data-toggle="modal" data-target="#modal-biologia_molecular">
               <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                      Biología molecular
                   </div>
                   <div class="project-name">
-                    Project Name
+                      Ofrece la detección de enfermedades
+                      infecciosas a través de la detección de virus, tales como el VPH, VIH, VHB, entre otros.
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+            <a class="portfolio-box" href="#" data-toggle="modal" data-target="#modal-citometria_fllujo">
               <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                      Citometría de flujo
                   </div>
                   <div class="project-name">
-                    Project Name
+                      Método que nos ayuda a conocer la cantidad, tamaño, complejidad y presencia de biomarcadores.
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+            <a class="portfolio-box" href="#">
               <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Análisis clínicos
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Ofrecemos examenes de: Hematología, Inmunología y bioquímica sanguínea.
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+            <a class="portfolio-box" href="#">
               <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Consulta de resultados
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Consulte el status actual de sus exámenes.
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+            <a class="portfolio-box" href="#">
               <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Blog
                   </div>
                   <div class="project-name">
-                    Project Name
+                    En nuestro blog, podrá iniciar temas de conversación con nuestros cientes, revisar testimonios de satisfacción, etc.
                   </div>
                 </div>
               </div>
             </a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
       </div>
     </section>
 
@@ -284,22 +461,105 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Pongase en contacto con nosotros!</h2>
             <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <p class="mb-5">
+              Nuestra prioridad es atenderle de forma eficiente y con el profesionaismo que nos caracteriza ...
+            </p>
+          </div>
+        </div>
+        <div class="row"> 
+          <div class="col-lg-3 ml-auto text-center">
+            <i class="fas fa-home fa-3x mb-3 sr-contact-1"></i>
+            <p>Ortega y Montañez No. 327 Col. Centro Histórico Morelia, Michoacán.</p>
+          </div>
+          <div class="col-lg-3 ml-auto text-center">
+            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
+            <p>(443) 320 2644</p>
+            <p>(443) 317 5103</p>
+          </div>
+          <div class="col-lg-3 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <p>
+              <a href="mailto:contacto@mendel.mx" style="color: black;"> contacto@mendel.mx</a>
+              <a href="mailto:laboratoriosmendel@hotmail.com" style="color: black;"> laboratoriosmendel@hotmail.com</a>
+            </p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
-            <p>123-456-6789</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
-            <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
-            </p>
-          </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+               
+                <div class="box-part text-center">
+                              
+                              <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                              
+                  <div class="title">
+                    <a class="social" href="https://www.facebook.com/mendelab" target="_blank" style="color: black; text-decoration: none;">facebook.com/mendelab</a>
+                  </div>        
+                 </div>
+              </div>	 
+              
+               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                     
+                <div class="box-part text-center">
+                    
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                          
+                  <div class="title">
+                    <a class="social" href="https://twitter.com/lab_Mendel" target="_blank" style="color: black; text-decoration: none;">Twitter: @lab_Mendel</a>
+                  </div>    
+                 </div>
+              </div>	 
+              <style>
+                @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
+
+                body{
+                    background: #f2f2f2;
+                    font-family: 'Josefin Sans', sans-serif;
+                }
+
+                h3{
+                    font-family: 'Josefin Sans', sans-serif;
+                }
+
+                .box{
+                    padding:60px 0px;
+                }
+
+                .box-part{
+                    background:#FFF;
+                    border-radius:10px;
+                    padding:60px 10px;
+                    margin:30px 0px;
+                }
+
+                .box-part:hover{
+                    background:#4183D7;
+                }
+
+                .social:hover {
+                  color:#FFF;
+                    -webkit-transition: all 1s ease-out;
+                    -moz-transition: all 1s ease-out;
+                    -o-transition: all 1s ease-out;
+                    transition: all 1s ease-out;
+                }
+
+                .box-part:hover .fa , 
+                .box-part:hover .title , 
+                .box-part:hover .title .social ,
+                .box-part:hover .social{
+                    color:#FFF;
+                    -webkit-transition: all 1s ease-out;
+                    -moz-transition: all 1s ease-out;
+                    -o-transition: all 1s ease-out;
+                    transition: all 1s ease-out;
+                }
+
+                .text{
+                    margin:20px 0px;
+                }
+              </style>
         </div>
       </div>
     </section>
@@ -421,6 +681,162 @@
             </div>
           </div>
         </div>
+
+        <div id="modal-fish" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img src="img/portfolio/thumbnails/1.jpg" alt="" class="modal-img_header">
+                <div class="modal-body texto_descripcion" id="pre_postnatal_body">
+                  <br>
+                    <p>
+                        La técnica de Hibridación In Situ Fluorescente (FISH) se ha convertido en una
+                        herramienta de gran utilidad, capaz de detectar rearreglos en genes relacionados a
+                        enfermedades genéticas hereditarias y de novo así como marcadores asociados a
+                        cáncer o leucemias que son de alto valor diagnóstico y pronóstico para el paciente.
+                        Esta técnica es muy sensible y específica ya que permite analizar un mayor número de
+                        células incrementando la probabilidad de encontrar anormalidades cromosómicas, lo
+                        cual se realiza en metafases así como en núcleos, lo que representa una gran ventaja
+                        en los casos clínicos en donde no fue posible obtener un cariotipo o se obtuvo un
+                        índice de metafases muy bajo.
+                    </p>
+                    <p>
+                        Esta técnica utiliza una sonda (secuencia de DNA marcada con un fluoróforo) que
+                        hibrida las secuencias únicas simples, es un complemento de la citogenética clásica. 
+                    </p>
+                    <strong>Algunos de los síndromes que se presentan a causa de deleciones submicroscópicas y
+                        para los cuales Mendel ofrece estudios FISH son:</strong>
+                    <ul>
+                        <li>Síndrome de Charge</li>
+                        <li>Síndrome de Cri-du-chat</li>
+                        <li>Síndrome de DiGeorge</li>
+                        <li>Síndrome de Prader Willi / Angelman</li>
+                        <li>Síndrome de Saethre-Chotzen</li>
+                        <li>Síndrome de Williams</li>
+                        <li>Síndrome de Turner</li>
+                        <li>Diferenciación sexual: gen SRY, pintado de los cromosomas sexuales.</li>
+                    </ul>
+                    <strong>En el área de oncología encontramos distintas neoplasias que presentan rearreglos
+                        genéticos para las cuales Mendel ofrece estudios FISH son:</strong>
+                    <ul>
+                        <li>Mieloma múltiple (deleción 13q,p53, rearreglos en IGH)</li>
+                        <li>Leucemia mieloide crónica (BCR/ABL1)</i>
+                        <li>Leucemia mieloide aguda (PML/RARα, AML1/ETO, p53, rearreglos MLL)</i>
+                        <li>Leucemia linfocítica crónica (deleción 13q, trisomía 12, ATM, deleción MYB)</li>
+                        <li>Leucemia linfoblástica aguda (TEL/AML1, P53, rearreglos MLL, deleción MYB)</li>
+                        <li>Sindrome mielodisplásico (deleción 7q y 5q)</li>
+                        <li>Linfomas (rearreglos C-MYC)</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="modal-biologia_molecular" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="img/portfolio/thumbnails/2.jpg" alt="" class="modal-img_header">
+                  <div class="modal-body texto_descripcion" id="pre_postnatal_body">
+                    <br>
+                      <p>
+                          El área de BIOLOGÍA MOLECULAR ofrece la detección de enfermedades
+                          infecciosas a través de la detección de virus, tales como el VPH (virus del
+                          papiloma humana, VIH (virus de inmunodeficiencia humana), VHB (virus de
+                          hepatitis B), entre otros. También ofertamos un panel de enfermedades venéreas
+                          por métodos moleculares.
+
+                          De esta manera, damos continuidad a nuestra filosofía, transformar el cuidado de
+                          la salud de nuestros pacientes y brindar bienestar a las familias.
+                      </p>
+                      <p>
+                          El área principal de diagnóstico molecular se enfoca en los cánceres de la sangre
+                          (leucemias/neoplasias hematológicas), por ello ofrecemos paneles de diagnóstico
+                          para la Leucemia linfoblástica aguda, que es la más frecuente en niños y para
+                          Leucemia mieloide aguda, la cual es frecuente en adultos. 
+                      </p>
+                      <p>
+                        También se diagnostican otras neoplasias como policitemia vera, mielofibrosis
+                          primaria, trombocitemia esencial, leucemia granulocítica crónica, entre otras.
+                          Detectar de manera oportuna estos padecimientos y de los marcadores
+                          moleculares asociados a ellao, contribuye a tener el mejor tratamiento y el mejor
+                          seguimiento de la enfermedad, lo que mejora el pronóstico de los pacientes y su
+                          calidad de vida.
+                      </p>
+                      <p>
+                          Ofrecemos servicios de pruebas de paternidad lo cual es un estudio confiable que
+                          permite identificar la relación padre- hijo. Además, se ofertan las pruebas de
+                          maternidad, abuelidad y parentesco (relación avuncular), servicio que da
+                          tranquilidad y bienestar a las familias. La determinación de estas pruebas es a
+                          través de la secuenciación de regiones de DNA que se heredan de padres a hijos
+                          de manera directa, estas regiones se conocen como STR´s (short tandem repeats)
+                          y realizando la comparación de los perfiles de los individuos analizados se
+                          determina la relación familiar. Estos estudios se realizan en sangre periférica y/o
+                          en células bucales obtenidas por un raspado con hisopos. Es muy importante
+                          informar que la toma de muestra la debe realizar personal calificado para
+                          garantizar la integridad de las mismas.
+                        </p>
+                        <p>
+                          También se diagnostican otras neoplasias como policitemia vera, mielofibrosis
+                            primaria, trombocitemia esencial, leucemia granulocítica crónica, entre otras.
+                            Detectar de manera oportuna estos padecimientos y de los marcadores
+                            moleculares asociados a ellao, contribuye a tener el mejor tratamiento y el mejor
+                            seguimiento de la enfermedad, lo que mejora el pronóstico de los pacientes y su
+                            calidad de vida.
+                        </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div id="modal-citometria_fllujo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <img src="img/portfolio/thumbnails/3.jpg" alt="" class="modal-img_header">
+                  <div class="modal-body texto_descripcion" id="pre_postnatal_body">
+                    <br>
+                      <p>
+                          <strong>Citometría de Flujo</strong> es un método utilizado en laboratorios de alta especialidad
+                          que se basa en el uso de luz laser que incide sobre células transportadas por un
+                          flujo continuo y ordenado de líquido envolvente; con el objeto de conocer las
+                          características distintivas de una población celular; es decir, nos ayuda a conocer
+                          la cantidad, tamaño, complejidad y presencia de biomarcadores.
+                      </p>
+                      <p>
+                          <strong>Estudios que se realizan en Mendel y su relevancia clínica:</strong>
+                          <ul>
+                              <li>
+                                  a) <strong>INMUNOFENOTIPO:</strong> 
+                                  Sirve para el diagnóstico y clasificación de Leucemias</li>
+                              <li>
+                                  b) <strong>ENFERMEDAD MÍNIMA RESIDUAL:</strong> 
+                                  Sirve para detectar células malignas
+                              en pacientes que se encuentran en tratamiento de leucemia. Con el
+                              objetivo de tener un pronóstico y establecer una estrategia ajustada a
+                              riesgo, es decir, intensificar el tratamiento en pacientes con respuesta
+                              inadecuada a la quimioterapia o disminuir la intensidad del tratamiento en
+                              pacientes de bajo riesgo.</li>
+                              <li>
+                                  c) <strong>ÍNDICE DE ADN:</strong> 
+                                  Usado como factor pronóstico en ciertos tipos de
+                              Leucemias. En donde un buen pronóstico = favorable para el paciente y mal pronóstico
+                              = desfavorable para el paciente.</li>
+                              <li>
+                                  d) <strong>SUBPOBLACIÓN DE LINFOCITOS CD4/CD8:</strong>
+                              Control y seguimiento de pacientes infectados con el virus de
+                              Inmunodeficiencia humana (VIH) o pacientes con enfermedades
+                              Autoinmunitarias.</li>
+                          </ul>
+
+                      </p>
+                      <p>
+                          El tiempo de proceso de estos estudios es de 4 días hábiles y el tipo de
+                          muestra que se requiere es Médula ósea (Extraída por médico hematólogo)
+                          y sólo para la SUBPOBLACIÓN DE LINFOCITOS CD4/CD8 se requiere
+                          sangre periférica. 
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
     </section>
 
     <!-- Bootstrap core JavaScript -->
