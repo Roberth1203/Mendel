@@ -36,7 +36,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <img src="img/logo.png" alt="" width="200" height="40">
+            <img src="img/logo.png" alt="" width="250" height="70">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -46,24 +46,38 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#AboutUs" style="color:black;"> Nosotros</a>
             </li>
+            <!--<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#citogenetica" style="color:black;">
+                Servicios
+              </a>
+            </li>-->
+            <li class="nav-item dropdown">
+                <a class="nav-link js-scroll-trigger dropdown-toggle" href="#Services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">
+                  Servicios
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Citogenética Clásica</a>
+                  <a class="dropdown-item" href="#">Citogenética Molecular (FISH)</a>
+                  <a class="dropdown-item" href="#">Biología molecular</a>
+                  <a class="dropdown-item" href="#">Citometría de flujo</a>
+                  <a class="dropdown-item" href="#">Laboratorio clínico</a>
+                </div>
+              </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#citogenetica" style="color:black;">Citogenética</a>
+              <a class="nav-link js-scroll-trigger" href="#" style="color:black;">Noticias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio" style="color:black;">Bio. molecular</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio" style="color:black;">FISH</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#portfolio" style="color:black;"><small>Análisis Clínicos</small></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#portfolio" style="color:black;">Resultados</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio" style="color:black;">Blog</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#contact" style="color:black;">Contacto</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#" style="color:black;">Buscar</a>
+            </li>
+            <!--<li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact" style="color:black;">Contacto</a>
+            </li>-->
           </ul>
         </div>
       </div>
@@ -86,24 +100,30 @@
       </div>-->
       <div class="containerSlide">
           <div class="slider">
-              <div class="slide slide1">
-                  <div class="caption">
-                      <h2>Biología molecular</h2>
-                      <p>
-                          Estudio de los fenómenos biológicos a partir de los ácidos nucleicos (DNA y RNA) y proteínas asociadas como elementos centrales.
-                      </p>
-                  </div>
-              </div>
               <div class="slide slide2">
                   <div class="caption">
-                      <h2>Citogenética</h2>
+                      <h2>Citogenética clásica</h2>
                       <p>Estudio del material genético condensado en cromosomas.</p>
                   </div>
               </div>
               <div class="slide slide3">
                   <div class="caption">
-                      <h2>FISH</h2>
+                      <h2>Citogenética molecular (FISH)</h2>
                       <p>Hibridación fluorescente en el sitio cromosómico de interés utilizando sondas específicas de DNA.</p>
+                  </div>
+              </div>
+              <div class="slide slide1">
+                  <div class="caption">
+                      <h2>Biología molecular</h2>
+                      <p>
+                          Análisis del genoma humano y sus variaciones con importancia clínica
+                      </p>
+                  </div>
+              </div>
+              <div class="slide slide5">
+                  <div class="caption">
+                      <h2>Citometría de flujo</h2>
+                      <p>Estudio de las características que diferencian a las células.</p>
                   </div>
               </div>
               <div class="slide slide4">
@@ -182,34 +202,46 @@
 	background-position: center;
 }
 
+.containerSlide .slider .slide.slide5 {
+	background: url(img/slider2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
 
 @keyframes animate {
 	0% {
 		left: 0;
 	}
-	20% {
+	15% {
 		left: 0;
 	}
-	25% {
+	20% {
 		left: -100%;
 	}
-	45% {
+	35% {
 		left: -100%;
 	}
-	50% {
+	40% {
 		left: -200%;
 	}
-	70% {
+	55% {
 		left: -200%;
+	}
+	60% {
+		left: -300%;
 	}
 	75% {
 		left: -300%;
 	}
-	95% {
-		left: -300%;
-	}
-	100% {
+	80% {
 		left: -400%;
+  }
+  95% {
+		left: -400%;
+  }
+  1005% {
+		left: -500%;
 	}
 }
 
@@ -240,30 +272,29 @@
             <h2 class="section-heading">Sobre nosotros</h2>
             <hr class="my-4">
             <p class="mb-5">
-                Laboratorios Mendel es un laboratorio clínico con especialidad en Citogenética Clásica, Citogenética Molecular y Biología Molecular, establecido en la ciudad de Morelia, Michoacán.
+                Mendel inicia sus actividades en la ciudad de Morelia, Michoacán el día 4 de abril de
+                2004. La empresa cuenta con un servicio de laboratorio que atiende las necesidades de
+                diagnóstico genético en las disciplinas de citogenética clásica, citogenética molecular,
+                biología molecular y laboratorio clínico siendo la primera empresa de su tipo establecida
+                en el estado de Michoacán.
             </p>
-            <a id="enlace-aviso_privacidad" data-toggle="modal" data-target="#modal-aviso_privacidad">Aviso de Privacidad</a>
+            <a id="enlace-aviso_privacidad" data-toggle="modal" data-target="#modal-aviso_privacidad">
+              <strong>Aviso de Privacidad</strong>
+            </a>
             <p></p>
           </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 ml-auto text-justify">
+            <div class="col-lg-6 ml-auto text-justify">
               <strong>MISIÓN</strong>
               <p>
-                  Proveer el mejor servicio de diagnóstico genético y molecular basado en el cumplimiento de los más altos estándares de calidad y respaldado por un personal especializado en cada una de las áreas de competencia a fin de establecer un vínculo profesional y humano entre laboratorio, pacientes y médicos tratantes.
+                  Transformar el cuidado de la salud generando bienestar en cada familia a través de servicios de diagnóstico que garanticen valor y conocimiento.
               </p>
             </div>
-            <div class="col-lg-4 ml-auto text-justify">
+            <div class="col-lg-6 ml-auto text-justify">
               <strong>VISIÓN</strong>
               <p>
-                  Ser el principal proveedor de servicios de diagnóstico genético molecular, a nivel nacional, en las áreas prenatal, postnatal y onco-hematopatológica, basados siempre en los más altos estándares de calidad y comprometidos con el bienestar y salud del paciente.
-              </p>
-            </div>
-            <div
-             class="col-lg-4 mr-auto text-justify">
-              <strong>FILOSOFÍA</strong>
-              <p>
-                  Ser una empresa innovadora, constantemente en desarrollo, con colaboradores comprometidos e involucrados en las áreas de investigación, desarrollo y docencia, interesados por el bienestar de la sociedad a la que servimos.
+                  Ser la entidad corporativa líder en diagnóstico genético molecular, reconocida por su compromiso social y la calidad humana impresa en los servicios que ofrece.
               </p>
             </div>
           </div>
@@ -274,10 +305,10 @@
                   <img src="img/EMA.jpg" alt="" width="300" height="200">
                 </div>
                 <div class="col-lg-8 mx-auto text-center">
-                  <h2 class="section-heading text-white">Acreditación EMA </h2>
+                  <h2 class="section-heading text-white">Acreditación</h2>
                   <hr class="light my-4">
                   <p class="text-faded mb-4">
-                    Estamos acreditados ante los más altos estándares en citogenética y biología molecular.
+                      En 2015 Mendel es el primer laboratorio de citogenética en el país acreditado bajo la norma NMX-EC-15189-IMNC-2015 (Requisitos de la calidad y competencia de los laboratorios clínicos) y en 2016 amplia el alcance a las áreas de biología y citogenética molecular.
                   </p>
                   <a class="btn btn-light btn-xl js-scroll-trigger" href="#services" data-toggle="modal" data-target="#modal-acreditacion_ema">Saber más!</a>
                 </div>
@@ -287,7 +318,7 @@
       </div>
     </section>
 
-    <section id="citogenetica">
+    <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -300,24 +331,32 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-clipboard-list text-primary mb-3 sr-icon-1"></i>
-              <h3 class="mb-3" data-toggle="modal" data-target="#modal-pre_postnatal" style="cursor: pointer;">PRE-POSTNATAL</h3>
-              <p class="text-muted mb-0">
+              <!--<i class="fas fa-4x fa-clipboard-list text-primary mb-3 sr-icon-1"></i>-->
+              <img id="img-pregnant" src="img/pregnant.jpg" alt="" width="100" height="100">
+              <br>
+              <h3 class="mb-3" style="cursor: pointer;">PRE-POSTNATAL</h3>
+              <p class="text-muted mb-0" style="text-align: justify;">
                   Diagnóstico de anomalías congénitas de órganos y/o sistemas del ser humano, retraso mental, retraso en el
                   desarrollo, trastornos reproductivos como infertilidad, abortos espontáneos, entre
                   otros..
               </p>
+              <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal-pre_postnatal">
+                  <i class="fa fa-check" aria-hidden="true"></i> Saber más
+              </button>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-dna text-primary mb-3 sr-icon-2"></i>
-              <h3 class="mb-3" data-toggle="modal" data-target="#modal-oncohematologia"  style="cursor: pointer;">ONCOHEMATOLÓGICA</h3>
-              <p class="text-muted mb-0">
+              <img src="img/mendel-background.jpg" class="img-circle" width="100" height="100">
+              <h3 class="mb-3" style="cursor: pointer;">ONCOHEMATOLÓGICA</h3>
+              <p class="text-muted mb-0" style="text-align: justify;">
                   El análisis citogenético es el estudio de los cromosomas de las células en metafase.
                   Las anomalías cromosómicas pueden deberse a defectos en la estructura o a
                   modificaciones en el número de los cromosomas.
               </p>
+              <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#modal-oncohematologia">
+                  <i class="fa fa-check " aria-hidden="true"></i> Saber más
+              </button>
             </div>
           </div>
         </div>
@@ -333,9 +372,9 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12 col-md-12 text-center">
-                
-                  <i class="fas fa-4x fa-eye-dropper text-primary mb-3 sr-icon-1"></i>
-                  
+                <img src="img/cito-molecular.jpg" class="img-circle" width="100" height="100">
+              </div>
+              <div class="col-lg-12 col-md-12 text-justify">
                   <p class="text-muted mb-0">
                       A la par de la Citogenética Clásica, la parte molecular de la citogenética ayuda a resaltar partes puntuales o específicas de la doble hélice, determinando la presencia o ausencia de material genético relacionado a una alteración patológica o enfermedad.
                   </p>
@@ -345,7 +384,6 @@
                   <p>
                       La citogenética molecular complementa perfectamente a la citogenética clásica en todas aquellas situaciones en las que no ha sido posible realizar un cariotipo: al disponer de metafases de poca calidad, o no haber obtenido metafases, o bien en los casos en los que las alteraciones cromosómicas asociadas a un diagnóstico son crípticas no visibles en el cariotipo, como el caso de la t(12;21) en leucemia aguda linfoblástica(LLA).
                   </p>
-                
               </div>
             </div>
           </div>
@@ -363,12 +401,27 @@
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="#">
+              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Citogenética clásica
+                  </div>
+                  <div class="project-name">
+                    Consulte el status actual de sus exámenes.
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" data-toggle="modal" data-target="#modal-fish">
               <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    FISH
+                    Citogenética molecular (FISH)
                   </div>
                   <div class="project-name">
                       Hibridación fluorescente en el sitio cromosómico de interés utilizando sondas específicas de DNA
@@ -414,25 +467,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Análisis clínicos
+                    Laboratorio clínico
                   </div>
                   <div class="project-name">
                     Ofrecemos examenes de: Hematología, Inmunología y bioquímica sanguínea.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="#">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Consulta de resultados
-                  </div>
-                  <div class="project-name">
-                    Consulte el status actual de sus exámenes.
                   </div>
                 </div>
               </div>
@@ -461,17 +499,40 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Pongase en contacto con nosotros!</h2>
+            <h2 class="section-heading">Póngase en contacto con nosotros!</h2>
             <hr class="my-4">
             <p class="mb-5">
               Nuestra prioridad es atenderle de forma eficiente y con el profesionaismo que nos caracteriza ...
             </p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-7 ml-auto text-center">
+              <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.3347639263216!2d-101.19058828555936!3d19.698366786733875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e74694cb3e5%3A0x636151d9b30ed40!2sCalle+Ortega+y+Monta%C3%B1es+327%2C+Centro+Hist%C3%B3rico%2C+58000+Morelia%2C+Mich.!5e0!3m2!1ses-419!2smx!4v1547445847975" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-lg-5 ml-auto text-center">
+              <div class="contact-form">
+                  <h1 class="title">¿Dudas, comentarios, sugerencias?</h1>
+                  <h2 class="subtitle">Su opinión es lo más importante para nosotros.</h2>
+                  <form action="">
+                    <input type="text" name="name" class="form-control" placeholder="Nombre completo" />
+                    <input type="email" name="e-mail" class="form-control" placeholder="Correo electrónico" />
+                    <input type="tel" name="phone" class="form-control" placeholder="Número de teléfono"/>
+                    <textarea name="text" id="" class="form-control" rows="4" placeholder="Escriba aquí su mensaje"></textarea>
+                    <button class="btn-send">Enviar</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <br>
         <div class="row"> 
           <div class="col-lg-3 ml-auto text-center">
             <i class="fas fa-home fa-3x mb-3 sr-contact-1"></i>
-            <p>Ortega y Montañez No. 327 Col. Centro Histórico Morelia, Michoacán.</p>
+            <p>Ortega y Montañez No. 327</p>
+            <p>Col. Centro</p>
+            <p>Morelia, Michoacán.</p>
           </div>
           <div class="col-lg-3 ml-auto text-center">
             <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
@@ -487,7 +548,7 @@
           </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                
                 <div class="box-part text-center">
                               
@@ -496,18 +557,6 @@
                   <div class="title">
                     <a class="social" href="https://www.facebook.com/mendelab" target="_blank" style="color: black; text-decoration: none;">facebook.com/mendelab</a>
                   </div>        
-                 </div>
-              </div>	 
-              
-               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                     
-                <div class="box-part text-center">
-                    
-                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                          
-                  <div class="title">
-                    <a class="social" href="https://twitter.com/lab_Mendel" target="_blank" style="color: black; text-decoration: none;">Twitter: @lab_Mendel</a>
-                  </div>    
                  </div>
               </div>	 
               <style>
@@ -650,7 +699,7 @@
       <div id="modal-oncohematologia" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
-              <img src="img/onco.jpg" alt="" class="modal-img_header">
+              <img src="img/foto4.jpg" alt="" class="modal-img_header">
               <div class="modal-body texto_descripcion" id="oncohematologia_body">
                 <br>
                   <h5>Mendel es el primer laboratorio en el país que obtiene una acreditación en el área de

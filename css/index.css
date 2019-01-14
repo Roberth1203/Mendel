@@ -1,4 +1,5 @@
 #enlace-aviso_privacidad {
+    font-size: 24pt;
     cursor: pointer;
     color: red;
 }
@@ -22,3 +23,61 @@ embed {
 .texto_descripcion > ul > li {
     font-size: 10pt;
 }
+
+#img-pregnant {
+    padding-bottom: 2%;
+}
+
+.img-circle {
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+
+/**/
+.portfolio-box {
+    cursor: pointer;
+}
+
+/* mapa y form de contacto */
+iframe {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-left: 2%;
+    float: left;
+  }
+  .contact-form .title {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #242424;
+    margin: 5% 8%;
+  }
+  .contact-form .subtitle {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0 4% 5% 8%;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 80%;
+    padding: 3%;
+    margin: 2% 8%;
+    color: #242424;
+    border: 1px solid #B7B7B7;
+  }
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #242424;
+  }
+  .contact-form .btn-send {
+    background: #A383C9;
+    width: 180px;
+    height: 60px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin: 2% 8%;
+    border: none;
+  }
