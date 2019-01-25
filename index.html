@@ -56,11 +56,11 @@
                   Servicios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Citogenética Clásica</a>
-                  <a class="dropdown-item" href="#">Citogenética Molecular (FISH)</a>
-                  <a class="dropdown-item" href="#">Biología molecular</a>
-                  <a class="dropdown-item" href="#">Citometría de flujo</a>
-                  <a class="dropdown-item" href="#">Laboratorio clínico</a>
+                  <a class="dropdown-item" href="#services">Citogenética Clásica</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" data-target="#modal-fish">Citogenética Molecular (FISH)</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" data-target="#modal-biologia_molecular">Biología molecular</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" data-target="#modal-citometria_fllujo">Citometría de flujo</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" data-target="#modal_tabla_clinicos">Laboratorio clínico</a>
                 </div>
               </li>
             <li class="nav-item">
@@ -192,18 +192,18 @@
 	background-position: center;
 }
 .containerSlide .slider .slide.slide3 {
-	background: url(img/slider3.jpg);
+	background: url(img/cover_images/FISH.jpg);
 	background-size: cover;
 	background-position: center;
 }
 .containerSlide .slider .slide.slide4 {
-	background: url(img/slider4.jpg);
+	background: url(img/cover_images/clinicos.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .containerSlide .slider .slide.slide5 {
-	background: url(img/slider2.jpg);
+	background: url(img/slider3.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -401,15 +401,15 @@
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="#">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <a class="portfolio-box" data-toggle="modal" data-target="#modal_tabla_clinicos">
+              <img class="img-fluid" src="img/cover_images/clinicos.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Citogenética clásica
+                    Laboratorio clínico
                   </div>
                   <div class="project-name">
-                    Consulte el status actual de sus exámenes.
+                    Ofrecemos examenes de: Hematología, Inmunología y bioquímica sanguínea.
                   </div>
                 </div>
               </div>
@@ -417,7 +417,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" data-toggle="modal" data-target="#modal-fish">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+              <img class="img-fluid" src="img/cover_images/FISH.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -432,7 +432,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" data-toggle="modal" data-target="#modal-biologia_molecular">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+              <img class="img-fluid" src="img/cover_images/Mendel Banners 21.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -463,14 +463,14 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="#">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Laboratorio clínico
+                    Citogenética clásica
                   </div>
                   <div class="project-name">
-                    Ofrecemos examenes de: Hematología, Inmunología y bioquímica sanguínea.
+                    Consulte el status actual de sus exámenes.
                   </div>
                 </div>
               </div>
@@ -632,9 +632,9 @@
         </div>
 
       <div id="modal-pre_postnatal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xs">
           <div class="modal-content">
-            <img src="img/lab_1.jpg" alt="" class="modal-img_header">
+            <img src="img/cover_images/pre post.jpg" alt="" class="modal-img_header">
             <div class="modal-body texto_descripcion" id="pre_postnatal_body">
               <br>
                 <p>
@@ -697,9 +697,9 @@
       </div>
 
       <div id="modal-oncohematologia" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
+          <div class="modal-dialog modal-xs">
             <div class="modal-content">
-              <img src="img/foto4.jpg" alt="" class="modal-img_header">
+              <img src="img/cover_images/onco.jpg" alt="" class="modal-img_header">
               <div class="modal-body texto_descripcion" id="oncohematologia_body">
                 <br>
                   <h5>Mendel es el primer laboratorio en el país que obtiene una acreditación en el área de
@@ -731,11 +731,156 @@
           </div>
         </div>
 
+        <div id="modal_tabla_clinicos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xs">
+            <div class="modal-content">
+              <img src="img/cover_images/clinicos.jpg" alt="" class="modal-img_header">
+              <div class="modal-body texto_descripcion" id="pre_postnatal_body">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h5 class="panel-title text-center">Indicaciones para estudios clínicos</h5>
+                  </div>   
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                          <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
+                              <div class="col-xs-10">
+                                  Química clinica
+                              </div>
+                              <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                          </div>
+                          <div id="detail-1">
+                              <hr></hr>
+                              <div class="container">
+                                  <div class="fluid-row">
+                                      <div class="col-xs-1">
+                                          Estudio(s):
+                                      </div>
+                                      <div class="col-xs-5 text-justify">
+                                          Glucosa, Urea, Creatinina, Ácido úrico
+                                          <br>
+                                          <ul>
+                                            <li><strong>Indicaciones:</strong> Presentarse en el laboratorio con un ayuno mínimo de 6 horas</li>
+                                            <li><strong>Muestra:</strong> Sangre periférica</li>
+                                          </ul>
+                                      </div>
+                                      <br>
+                                      <br>
+                                      <div class="col-xs-1">
+                                          Estudio(s):
+                                      </div>
+                                      <div class="col-xs-5 text-justify">
+                                          Colesterol, Trigliceridos, Perfíl de lípidos
+                                          <br>
+                                          <ul>
+                                            <li><strong>Indicaciones:</strong> Presentarse en el laboratorio para una toma de muestra sanguínea con un ayuno mínimo de 10 horas</li>
+                                            <li><strong>Muestra:</strong> Sangre periférica</li>
+                                          </ul>
+                                      </div>
+                                      <br>
+                                      <br>
+                                      <div class="col-xs-1">
+                                          Estudio(s):
+                                      </div>
+                                      <div class="col-xs-5 text-justify">
+                                          Pruebas de funcionamiento hepático, Amilasa, Lipasa, Albumina, Proteinas totales, Globulina, Electrolítos séricos (Na, K, Ca, Cl, Mg, P) , Fosfatasa alcalina
+                                          <br>
+                                          <ul>
+                                            <li><strong>Indicaciones:</strong> Presentarse al laboratorio con un ayuno mínimo de 6 horas</li>
+                                            <li><strong>Muestra:</strong> Sangre periférica</li>
+                                          </ul>
+                                      </div>
+                                      <br>
+                                      <br>
+                                      <div class="col-xs-1">
+                                          Estudio(s):
+                                      </div>
+                                      <div class="col-xs-5 text-justify">
+                                          Tamiz de glucosa, Curva de tolerancia a la grlucosa
+                                          <br>
+                                          <ul>
+                                            <li><strong>Indicaciones:</strong> Comunicarse al laboratorio para indicaciones, disponibilidad de tiempo para permanecer en el laboratorio.</li>
+                                            <li><strong>Muestra:</strong> Sangre periférica</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          <div class="row toggle" id="dropdown-detail-2" data-toggle="detail-2">
+                              <div class="col-xs-10">
+                                  Urianálisis
+                              </div>
+                              <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                          </div>
+                          <div id="detail-2">
+                              <hr></hr>
+                              <div class="container">
+                                  <div class="fluid-row">
+                                      <div class="col-xs-1">
+                                          Estudio(s):
+                                      </div>
+                                      <div class="col-xs-5 text-justify">
+                                          Examen general de orina, Microalbuminuria, Antidoping
+                                          <br>
+                                          <ul>
+                                            <li><strong>Indicaciones:</strong> Recolectar una muestra de orina (Deseablemente la primera de la mañana o que permanecer 4 horas sin haber orinado) en un frasco limpio de boca ancha, habiendo realizado aseo genital con agua y jabón, se descarta el primer chorro de la orina en el escusado, sin detener la micción recolectar el chorro medio en el frasco y descartar el chorro final en el escusado. Mujeres: Deseablemente no estar menstruando. Niños: Se puede usar una bolsa recolectora de orina y colocar la bolsa cerrada en un frasco para evitar derrames. No se requiere ayuno.</li>
+                                            <li><strong>Muestra:</strong> Orina</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          <div class="row toggle" id="dropdown-detail-3" data-toggle="detail-3">
+                              <div class="col-xs-10">
+                                  Parasitología
+                              </div>
+                              <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
+                          </div>
+                          <div id="detail-3">
+                              <hr></hr>
+                              <div class="container">
+                                  <div class="fluid-row">
+                                      <div class="col-xs-1">
+                                          Estudio(s):
+                                      </div>
+                                      <div class="col-xs-5 text-justify">
+                                          Examen coprológico, Ameba en fresco, Sangre oculta en heces, Azúcares reductores
+                                          <ul>
+                                            <li><strong>Indicaciones:</strong> Muestra de materia fecal del tamaño de una nuez en un frasco de boca ancha, que no tegan más de una hora de haber sido recolectada. En el caso de bebés se puede colocar el pañal al revés para evitar que el algodón absorba la muestra y pasar a un frasco de boca ancha. Evitar contaminación con orina.</li>
+                                            <li><strong>Muestra:</strong> Materia fecal</li>
+                                          </ul>
+                                      </div>
+                                      <br>
+                                      <br>
+                                      <div class="col-xs-1">
+                                          Estudio(s):
+                                      </div>
+                                      <div class="col-xs-5 text-justify">
+                                          Coproparasitoscópico
+                                          <ul>
+                                            <li><strong>Indicaciones:</strong> Muestra de materia fecal del tamaño de una nuez en un frasco de boca ancha. Si el estudio es en serie (2 o 3 muestras) se deben recolectar de días diferentes. No se requiere ayuno. En el caso de bebés se les puede colocar el pañal al revés para evitar que el algodón absorba la muestra y colocar en un frasco de boca ancha. Evitar contaminación con orina.</li>
+                                            <li><strong>Muestra:</strong> Material fecal</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div id="modal-fish" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-xs">
               <div class="modal-content">
-                <img src="img/portfolio/thumbnails/1.jpg" alt="" class="modal-img_header">
-                <div class="modal-body texto_descripcion" id="pre_postnatal_body">
+                <img src="img/cover_images/FISH.jpg" alt="" class="modal-img_header">
+                <div class="modal-body texto_descripcion" id="pre_postnatal_body" style="position: relative; z-index: 10; margin-top: 1;">
                   <br>
                     <p>
                         La técnica de Hibridación In Situ Fluorescente (FISH) se ha convertido en una
@@ -781,7 +926,7 @@
           </div>
 
           <div id="modal-biologia_molecular" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
+              <div class="modal-dialog modal-xs">
                 <div class="modal-content">
                   <img src="img/portfolio/thumbnails/2.jpg" alt="" class="modal-img_header">
                   <div class="modal-body texto_descripcion" id="pre_postnatal_body">
@@ -837,7 +982,7 @@
             </div>
 
           <div id="modal-citometria_fllujo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
+              <div class="modal-dialog modal-xs">
                 <div class="modal-content">
                   <img src="img/portfolio/thumbnails/3.jpg" alt="" class="modal-img_header">
                   <div class="modal-body texto_descripcion" id="pre_postnatal_body">
@@ -899,5 +1044,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
