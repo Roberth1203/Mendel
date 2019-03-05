@@ -12,59 +12,61 @@
         <!-- Custom fonts for this template -->
         <link href="lib/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
-
-        <!-- Plugin CSS -->
-        <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-        <!-- Custom styles for this template -->
-        <!-- <link href="css/creative.css" rel="stylesheet"> -->
 
         <!-- Custom styles -->
         <link rel="stylesheet" href="css/admin.css">
     </head>
     <body>
-        <div class="card">
-            <div class="card-body">
-                <h2>Historial de cambios en la aplicación</h2>
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Versión</th>
-                                <th>Fecha</th>
-                                <th>Descripción del cambio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1.0.0</td>
-                                <td>25-02-2019</td>
-                                <td>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, pariatur. Impedit cupiditate consequuntur maxime reprehenderit necessitatibus, ea assumenda iure optio earum labore eos fugiat magnam recusandae debitis reiciendis itaque alias.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
         
-        
+        <!-- The Timeline -->
+        <section >
+            <button type="button" class="btn btn-primary btn-lg btn-block">Mendel | Histórico de cambios</button>
+        </section>
+        <ul class="timeline">
 
-         <!-- Bootstrap core JavaScript -->
+            <!-- Item 1 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Demostración</span>
+                        <span class="time-wrapper"><span class="time">Febrero 2019</span></span>
+                    </div>
+                    <div class="desc">Se actualizan las imágenes de prueba por las definitivas, se corrigen algunos errores y fallosen resolución de imagenes, texto, presentación, etc. Se genera la DEMO del sitio web para validación del cliente</div>
+                </div>
+            </li>
+
+            <!-- Item 2 -->
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">Desarrollo</span>
+                        <span class="time-wrapper"><span class="time">Enero 2019</span></span>
+                    </div>
+                    <div class="desc">Se realiza la maquetación del sitio implementando las imágenes y textos propuestos por el cliente.</div>
+                </div>
+            </li>
+
+            <!-- Item 3 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Definición</span>
+                        <span class="time-wrapper"><span class="time">Diciembre 2018</span></span>
+                    </div>
+                    <div class="desc">Definición de requisitos para la maquetación del sitio web</div>
+                </div>
+            </li>
+
+        </ul>
+
+    </body>
+    <footer>
+        <!-- Bootstrap core JavaScript -->
         <script src="lib/jquery/jquery.min.js"></script>
         <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
         <!-- Plugin JavaScript -->
-        <script src="lib/jquery-easing/jquery.easing.min.js"></script>
-        <script src="lib/scrollreveal/scrollreveal.js"></script>
-        <script src="lib/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-        <!-- Custom scripts for this template -->
-        <!-- <script src="js/creative.js"></script> -->
         <script src="js/admin.js"></script>
-    </body>
-
+    </footer>
 </html>
