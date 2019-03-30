@@ -1,5 +1,5 @@
 #enlace-aviso_privacidad {
-    font-size: 24pt;
+    font-size: 28pt;
     cursor: pointer;
     color: red;
 }
@@ -81,3 +81,7 @@ iframe {
     margin: 2% 8%;
     border: none;
   }
+
+hr {
+  border-color: rgb(52, 96, 148);
+}
