@@ -1,3 +1,6 @@
+<?php 
+ ?>
+<!DOCTYPE <html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -37,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.html" style="color: rgb(52, 96, 148);">Pag. Principal</a>
+              <a class="nav-link js-scroll-trigger" href="index.php" style="color: rgb(52, 96, 148);">Pag. Principal</a>
             </li>
           </ul>
         </div>

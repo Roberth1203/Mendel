@@ -1,3 +1,5 @@
+<?php 
+ ?>
 <!DOCTYPE <html>
 </html>
 <html lang="es">
@@ -69,7 +71,7 @@
               <a class="nav-link js-scroll-trigger" href="#" style="color: rgb(52, 96, 148);">Noticias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="blog.html" style="color: rgb(52, 96, 148);">Blog</a>
+              <a class="nav-link js-scroll-trigger" href="blog.php" style="color: rgb(52, 96, 148);">Blog</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#contact" style="color: rgb(52, 96, 148);">Contacto</a>
@@ -100,7 +102,7 @@
           </div>
         </div>
       </div>-->
-      <div class="containerSlide">
+      <div id="carrusel" class="containerSlide">
           <div class="slider">
               <div class="slide slide2">
                   <div class="caption">
@@ -431,15 +433,16 @@
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="#">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <a class="portfolio-box ir-arriba" href="#">
+              <!--<img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">-->
+              <img class="img-fluid" src="img/portfolio/thumbnails/custom_logo_resizer.jpg" width="100%">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Citogenética clásica
+                    Volver a inicio
                   </div>
                   <div class="project-name text-justify">
-                    Consulte el status actual de sus exámenes.
+                    
                   </div>
                 </div>
               </div>
@@ -507,7 +510,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="#">
+            <a class="portfolio-box" href="#" onclick="toBlog();">
               <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -547,11 +550,11 @@
                   <h1 class="title">¿Dudas, comentarios, sugerencias?</h1>
                   <h2 class="subtitle">Su opinión es lo más importante para nosotros.</h2>
                   <form action="">
-                    <input type="text" name="name" class="form-control" placeholder="Nombre completo" />
-                    <input type="email" name="e-mail" class="form-control" placeholder="Correo electrónico" />
-                    <input type="tel" name="phone" class="form-control" placeholder="Número de teléfono"/>
-                    <textarea name="text" id="" class="form-control" rows="4" placeholder="Escriba aquí su mensaje"></textarea>
-                    <button class="btn-send" style="background-color: rgb(52, 96, 148);">Enviar</button>
+                    <input id="_inputNombre" type="text" name="name" class="form-control" placeholder="Nombre completo" />
+                    <input id="_inputMail" type="email" name="e-mail" class="form-control" placeholder="Correo electrónico" />
+                    <input id="_inputtel" type="tel" name="phone" class="form-control" placeholder="Número de teléfono"/>
+                    <textarea id="_inputcomentario" name="text" id="" class="form-control" rows="4" placeholder="Escriba aquí su mensaje"></textarea>
+                    <button type="button" class="btn-send" style="background-color: rgb(52, 96, 148);" onclick="sendMail();">Enviar</button>
                   </form>
                 </div>
             </div>
@@ -567,8 +570,12 @@
           </div>
           <div class="col-lg-3 ml-auto text-center" style="color: rgb(52, 96, 148);">
             <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
-            <p>(443) 320 2644</p>
-            <p>(443) 317 5103</p>
+            <p style="font-family: Helvetica, Arial, sans-serif;">
+                <i class="fa fa-phone-volume"></i> (443) 320 2644</p>
+            <p style="font-family: Helvetica, Arial, sans-serif;">
+                <i class="fa fa-phone-volume"></i> (443) 317 5103</p>
+            <p style="font-family: Helvetica, Arial, sans-serif;">
+                <i class="fa fa-whatsapp"></i> (443) 528 0357</p>
           </div>
           <div class="col-lg-3 mr-auto text-center" style="color: rgb(52, 96, 148);">
             <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
